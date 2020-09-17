@@ -20,4 +20,10 @@ public class JksApplication {
         return 1;
     }
 
+    @ResponseBody
+    @GetMapping("/test/version")
+    public String testVersion(){
+        return "1.1.0";
+    }
+
 }
